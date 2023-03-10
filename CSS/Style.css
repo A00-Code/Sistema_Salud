@@ -1,0 +1,100 @@
+html {
+   background-color: #f8f8f8;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.html-Inicio { background: #597aa2;}
+.Hiden { display: none;}
+.Text-Sty-1 {
+   color: white;
+   margin: 5px;
+}
+.Text-Sty-Mini {
+   font-size: 12px;
+}
+
+.Cn-User {
+   display: block;
+   
+   text-align: center;
+   font-size: 22px;
+   
+   background-color: #355a86;
+   border: #355a86 solid 5px; border-radius: 15px;
+
+   margin: 20vh auto; padding: 50px;
+   width: auto; max-width: 420px;
+}
+.Cn-User .Img-Main {
+   background-color: #ecf0f1;
+   border-radius: 20px;
+} 
+.Cn-User .Input-Sty-1 {
+   text-align: left;
+   font-size: 24px;
+   
+   background-color: #ecf0f1;
+   border: #355a86 solid 2px; border-radius: 10px;
+
+   margin: 0px 0px 10px 0px; padding: 20px;
+   width: 65vw; max-width: 360px;
+}
+.Cn-User .Text-Sty-1, .Cn-User .Button-Sty-1 { 
+   font-size: 22px;
+}
+.Cn-User .Button-Sty-1 {
+   color: white;
+   background-color: #4473ac;
+   border: #4473ac solid 2px; border-radius: 10px;
+
+   margin: 10px 0px 0px; padding: 10px 20px;
+   min-width: 200px;   width: 60%; max-width: 320px;
+   
+}
+.Cn-Toolbar {
+   display: flexbox;
+   
+   text-align: center;
+   
+   background-color: #355a86;
+   
+   margin: 0px; padding: 10px;
+   width: 200px;
+   height: 100vh;
+}
+.Cn-Toolbar .Text-Sty-1 {
+   font-size: 18px;
+}
+.Cn-Toolbar .Img-Face {
+   border: #ecf0f1 solid 1px;
+   margin: 5px 0px;
+   width: 100px; height: 100px;
+}
+.Img-Toolbar {
+   background-color: #ecf0f1;
+   border-radius: 10px; 
+   
+   padding: 5px;
+   width: 95%;
+}
+.Cn-Toolbar .Cn-Buttons {
+   display: grid;
+   grid-template-rows: repeat(6, auto);
+
+   margin: 15px 0px;
+}
+.Cn-Toolbar .Button-Sty-Menu {
+   font-size: 18px;
+   text-align: left;
+   color: white;
+   
+   background-color: #355a86;
+   border: #355a86 solid 2px;
+
+   margin: 2px 0px; padding: 8px;
+   width: 100%;
+}
+.Cn-Toolbar .Button-Sty-Menu:hover { background-color: #274870;}
+.Cn-Toolbar .Cn-Buttons-H {
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+}
