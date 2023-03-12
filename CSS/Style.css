@@ -51,21 +51,24 @@ html {
    
 }
 .Cn-Toolbar {
-   display: flexbox;
-   
+   display:flexbox;
+   position: absolute;
    text-align: center;
    
    background-color: #355a86;
    
    margin: 0px; padding: 10px;
+   top: 0px;
+   left: 0px;
    width: 200px;
-   height: 100vh;
+   height: 97vh;
 }
 .Cn-Toolbar .Text-Sty-1 {
    font-size: 18px;
 }
 .Cn-Toolbar .Img-Face {
-   border: #ecf0f1 solid 1px;
+   overflow: hidden;
+   border: #ecf0f1 solid 1px; border-radius: 50%;
    margin: 5px 0px;
    width: 100px; height: 100px;
 }
@@ -76,6 +79,13 @@ html {
    padding: 5px;
    width: 95%;
 }
+.Img_Icon {
+   display: flexbox;
+
+   width: 36px;
+   height: 36px;
+}
+
 .Cn-Toolbar .Cn-Buttons {
    display: grid;
    grid-template-rows: repeat(6, auto);
@@ -86,15 +96,200 @@ html {
    font-size: 18px;
    text-align: left;
    color: white;
+   cursor: pointer;
    
    background-color: #355a86;
    border: #355a86 solid 2px;
 
-   margin: 2px 0px; padding: 8px;
+   margin: -2px 0px; padding: 8px;
    width: 100%;
+}
+.Cn-Toolbar .Button-Sty-Menu span { 
+   position: absolute; 
+   margin: 10px 0px 0px 10px;
 }
 .Cn-Toolbar .Button-Sty-Menu:hover { background-color: #274870;}
 .Cn-Toolbar .Cn-Buttons-H {
    display: grid;
    grid-template-columns: repeat(3,auto);
 }
+.Cn-Menu-Banner .Grid{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+
+   background-color: #e5edf5;
+   
+   padding: 2px 15px;
+   width: calc(100vw - 250px)
+}
+.Cn-Menu-Banner {
+   margin-top: -6px;
+   
+   box-shadow: #95a5a6 0px 0px 10px 1px;
+}
+.Text-Sty-3 {
+   font-size: 18px;
+   color: #000;
+   margin: 10px 0px 2px;
+}
+.Text-Sty-4 {
+   font-size: 14px;
+   color: #355a86;
+   margin: 2px 0px 10px;
+}
+.Cn-Menu-Banner .Cn-Buttons {text-align: right;}
+.Cn-Menu-Banner .Button-Sty-0, .Cn-Menu-Banner .Button-Sty-1 {
+   font-size: 14px;
+   color: white;
+
+   border: none; border-radius: 5px;
+
+   margin: 15px auto auto; padding: 10px 20px;
+}
+.Cn-Menu-Banner .Button-Sty-0 { cursor: pointer; background-color: #95a5a6;}
+.Cn-Menu-Banner .Button-Sty-1 { cursor: pointer; background-color: #3dbc73;}
+
+.Mn-Pacient-Search { background-color: #fff;}
+.Input-Pacient-Search {
+   font-size: 16px;
+   color: #000;
+
+   background-color: #fff;
+   border: none;
+
+   margin: 0px; padding: 10px 12px;
+   width: 100%;
+}
+.Input-Pacient-Filter {
+   display: none;
+}
+.Cn-Menu-Banner .Mn-Pacient-Search label span {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   font-size: 14px;
+   color: #000;
+   border: #95a5a6 solid 1px; border-radius: 5px;
+   margin: 5px 5px 0 0; padding: 3px 10px;
+   right: 12px;
+}
+.Cn-Menu-Banner .Mn-Pacient-Search label input[type="checkbox"]:checked ~ span{
+   color: white;
+   background-color: #355a86;
+   border: #355a86 solid 1px;
+}
+.Mn-Pacient-Search {
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   width: calc(100vw - 220px);
+}
+.Button-Sty-Simple {
+   color: #858585;
+   background-color: white;
+   border: #e5edf5 solid 1px; border-radius: 5px;
+   margin: 0px 10px; padding: 5px 10px;
+   top: 0px;
+
+}
+.Button-Sty-Simple:hover {
+   cursor: pointer;
+   background-color: #e5edf5;
+}
+.Cn-Pacient-Count {
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   gap: 10px;
+   justify-content: center;
+}
+.Cn-Pacient-Count div {
+   text-align: center;
+   background-color: #fff;
+   border: #95a5a6 solid 2px; border-radius: 10px;
+   box-shadow: #cbd0d6 0 3px 5px;
+   margin: 15px 5px; padding: 5px 20px;
+}
+.Cn-Pacient-Count .Text-Sty-1 {
+   font-size: 24px;
+   color: #000;
+   margin: 0px;
+}
+.Cn-Pacient-Count .Text-Sty-2 {
+   font-size: 16px;
+   font-weight:500;
+   color: #355a86;
+   margin: 0px;
+}
+
+.Center {
+   text-align: center;
+}
+
+.Cn-Principal {
+  margin-left: 212px;
+}
+.Fn-Pacient {
+   border: #cbd0d6 solid 2px; border-radius: 15px;
+   margin: 10px 15px; padding: 15px;
+}
+.Cn-Pacient-Grid1, .Cn-Pacient-Grid2, .Cn-Pacient-Grid3 { display: grid;}
+.Cn-Pacient-Grid1 { grid-template-rows: repeat(2, auto); align-items: center; gap: 0px;}
+.Cn-Pacient-Grid2 { grid-template-columns: repeat(3, auto); justify-content: left; gap: 5px;}
+.Cn-Pacient-Grid3 { grid-template-columns: repeat(6, auto); justify-content: left; gap: 10px;}
+.Cn-Pacient-Grid2 .Img-Face { 
+   overflow: hidden;
+   border: #cbd0d6 solid 2px; border-radius: 10px;
+   width: 80px; height: 80px;
+}
+.Cn-Pacient-Grid1 .Text-Sty-1, .Cn-Pacient-Grid1 .Text-Sty-2 { position: relative; margin: 0px 10px;}
+.Cn-Pacient-Grid1 .Text-Sty-1 {
+   font-size: 18px;
+   font-weight: 500;
+   color: #000;
+   top: 5px;
+}
+.Cn-Pacient-Grid2 .Cn-Buttons {
+   display: flex;
+   position: relative;
+   width: 100%;
+}
+.Cn-Pacient-Grid2 .Button-Sty-1 span{
+   position: relative;
+   top: -14px;
+}
+.Cn-Pacient-Grid1 .Button-Sty-0, .Cn-Pacient-Grid1 .Button-Sty-1 {
+   cursor: pointer;
+   font-size: 14px;
+   color: white;
+
+   background-color: #355a86;
+   border: none; border-radius: 10px;
+
+   margin: auto 2px; padding: 5px 5px;
+   min-width: 42px;
+   height: 42px; 
+}
+.Cn-Pacient-Grid1 .Button-Sty-0 {background-color: #95a5a6;}
+.Cn-Pacient-Grid1 .Text-Sty-2 {
+   font-size: 12px;
+   font-weight: 500;
+   color: #355a86;
+   top: -10px;
+}
+.Cn-Pacient-Grid3 .Tag {
+   font-size: 14px;
+   border: #cbd0d6 solid 2px; border-radius: 5px;
+   
+   margin-top: 5px; padding: 5px 10px;
+}
+.Cn-Pacient-Register {
+   display: block;
+   background-color: #f8f8f8;
+   border: #355a86 solid 2px; border-radius: 5px;
+   margin: auto; padding: 15px 15px;
+}
+.Cn-Pacient-Register .Cn-Pacient-Grid1 {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+}
+.Grid-col-span-3 {column-count: auto / span 3;}
