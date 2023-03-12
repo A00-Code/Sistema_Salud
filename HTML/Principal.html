@@ -10,31 +10,56 @@
             <img src="../IMG/Cutlajo_Logo.png" alt="" class="Img-Toolbar">
          </div>
          <div class="">
+            <br>
+            <hr>
             <div class="User-Face">
-               <img src="" alt="" class="Img-Face">
+               <img src="../IMG/User_Img.jpg" alt="" class="Img-Face">
             </div>
-            <p class="Text-Sty-1">Nombre</p>
-            <p class="Text-Sty-1">Numero ID</p>
+            <div class="Text-Sty-1">
+               <p class="" style="margin: 0px;">Nombre</p>
+               <p class="Text-Sty-Mini">Numero ID</p>
+            </div>
+            <hr>
          </div>
          <div class="Cn-Buttons">
-            <button class="Button-Sty-Menu">Pacientes</button>
-            <button class="Button-Sty-Menu">Citas</button>
-            <button class="Button-Sty-Menu">Apartados</button>
-            <button class="Button-Sty-Menu">Perfil</button>
-            <button class="Button-Sty-Menu">Ayuda</button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Home.png" alt="" class="Img_Icon">
+               <span>Principal</span> 
+            </button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Home.png" alt="" class="Img_Icon">
+               <span>Pacientes</span> 
+            </button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Dates.png" alt="" class="Img_Icon">
+               <span>Citas</span> 
+            </button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Notes.png" alt="" class="Img_Icon">
+               <span>Notas</span> 
+            </button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Home.png" alt="" class="Img_Icon">
+               <span>Ayuda</span> 
+            </button>
          </div>
+         <hr>
          <div class="Text-Sty-1 ">
             <p class="Text-Sty-Mini">DD/MM/YYYY - HH/MM</p>
          </div>
          <div class="Cn-Buttons-H">
             <button class="Button-Sty-Menu">[=]</button>
-            <button class="Button-Sty-Menu">Busq</button>
-            <button class="Button-Sty-Menu">Salir</button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Search.png" alt="" class="Img_Icon">
+            </button>
+            <button class="Button-Sty-Menu">
+               <img src="../IMG/Icon_Exit.png" alt="" class="Img_Icon">
+            </button>
          </div>
       </div>
 
       <div class="Cn-Principal">
-         <div class="Cn-Menu">
+         <div class="Cn-Menu Hiden">
             <button class="Button-Sty-Menu">Pacientes</button>
             <button class="Button-Sty-Menu">Citas</button>
             <button class="Button-Sty-Menu">.</button>
@@ -42,13 +67,238 @@
             <button class="Button-Sty-Menu">.</button>
             <button class="Button-Sty-Menu">.</button>
          </div>
-         <div class="Mn-Pacient Hiden">
-            <button class="">Informacion</button>
-            <button class="">Notas</button>
-            <button class="">Estudios</button>
-            <button class="">Reseta</button>
-            <button class="">Resultados</button>
-            <button class="">Documentos</button>
+         <div class="Cn-Menu-Banner">
+            <div class="Grid Mn-Pacient" style="display: none;">
+               <div>
+                  <p class="Text-Sty-3">Catalogo de Pacientes</p>
+                  <p class="Text-Sty-4">Pacientes de la Unidad</p>
+               </div>
+               <div></div>
+               <div class="Cn-Buttons">
+                  <button class="Button-Sty-1">+ Nuevo Paciente</button>
+                  <button class="Button-Sty-0">i</button>
+               </div>
+            </div>
+            <div class="Grid Mn-Pacient-Sub">
+               <div>
+                  <p class="Text-Sty-3">Catalogo de Pacientes</p>
+                  <p class="Text-Sty-4">Pacientes de la Unidad</p>
+               </div>
+               <div></div>
+               <div class="Cn-Buttons">
+                  <button class="Button-Sty-1">Editar</button>
+                  <button class="Button-Sty-1">Nota de Evaluacion</button>
+                  <button class="Button-Sty-0">i</button>
+               </div>
+               <div class="Grid-col-span-3">
+                  <button class="Button-Sty-3">Registro</button>
+                  <button class="Button-Sty-3">Historial</button>
+                  <button class="Button-Sty-3">Notas</button>
+                  <button class="Button-Sty-3">Citas</button>
+                  <button class="Button-Sty-3">Estudios</button>
+                  <button class="Button-Sty-3">Resetas</button>
+                  <button class="Button-Sty-3">Estudios</button>
+                  <button class="Button-Sty-3">Alergias</button>
+                  <button class="Button-Sty-3">Documentos</button>
+               </div>
+            </div>
+            <div class="Mn-Pacient-Search">
+               <div>
+                  <input type="text" class="Input-Pacient-Search">
+               </div>
+               <div class="Cn-Buttons">
+                  <button class="Button-Sty-Simple">
+                    <span>
+                        X
+                    </span>
+                  </button>
+                  <label>
+                     <input type="checkbox" class="Input-Pacient-Filter">
+                     <span>Registro</span>
+                  </label>
+                  <label>
+                     <input type="checkbox" class="Input-Pacient-Filter">
+                     <span>Genero</span>
+                  </label>
+                  <label>
+                     <input type="checkbox" class="Input-Pacient-Filter">
+                     <span>RH</span>
+                  </label>
+               </div>
+            </div>
+            
+         </div>
+
+         <div class="Mn-Pacient">
+            <div class="Cn-Pacient-Count">
+               <div>
+                  <p class="Text-Sty-1">0</p>
+                  <p class="Text-Sty-2">Total de Pacientes</p>
+               </div>
+               <div>
+                  <p class="Text-Sty-1">0</p>
+                  <p class="Text-Sty-2">Femenino</p>
+               </div>
+               <div>
+                  <p class="Text-Sty-1">1</p>
+                  <p class="Text-Sty-2">Masculino</p>
+               </div>
+            </div>
+            <hr>
+            <div class="Cn-Pacient-Register" style="display: none;">
+               <div class="Pacient-Register-Banner">
+                  <div class="Cn-Pacient-Grid2">
+                     <span class="Text-Sty-1">Paciente</span>
+                     <span class="Text-Sty-2">Capture los datos del formulario</span>
+                  </div>
+                  <div>
+                     <button class="Button-Sty-1">Guardar</button>
+                     <button class="Button-Sty-0">X</button>
+                  </div>
+               </div>
+               <div class="Pacient-Register-Info">
+                  <div class="">
+                     <button>
+                        <img src="../IMG/Icon_Folder.png" alt="" class="Img_Icon">
+                        <span> Selecionar Foto</span>
+                     </button>
+                     <Button>
+                        <span>Camera</span>
+                     </Button>
+                  </div>
+                  <div class="">
+                     <span>CURP:</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Nombre</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Apellido Paterno</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Apellido Materno</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Fecha de Nacimiento</span>
+                     <input type="date" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Edad</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Genero</span>
+                     <input type="radio" id="Pacient-Gender-F">
+                     <label for="Pacient-Gender-F">Femenino</label>
+                     <input type="radio" id="Pacient-Gender-M">
+                     <label for="Pacient-Gender-M">Masculino</label>
+                  </div>
+                  <div class="">
+                     <span>Ocupacion</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Telefono Celular</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Telefono</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Domicilio
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">
+                     <span>Ciudad</span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Entidad de Nacimiento
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Grupo Sangineo / Factor RH
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Religion
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Correo Electronico
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Direccion
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+                  <div class="">Detalle
+                     <span></span>
+                     <input type="text" class="Input-Sty-1">
+                  </div>
+               </div>
+            </div>
+            
+            <div class="Fn-Pacient Hiden">
+               <div class="Cn-Pacient-Grid1">
+                  <div class="Cn-Pacient-Grid2">
+                     <div>
+                        <img src="../IMG/User_Img.jpg" alt="" class="Img-Face">
+                     </div>
+                     <div class="Cn-Pacient-Grid1">
+                        <span class="Text-Sty-1">Paciente #1</span>
+                        <span class="Text-Sty-2">PT001, Genero: Masculino, Edad: 20A 7M (dd/mm/yyyy), </span>
+                     </div>
+                     <div class="Cn-Buttons">
+                        <button class="Button-Sty-1">
+                           <img src="../IMG/Icon_Pencil.png" alt="" class="Img_Icon">
+                        </button>
+                        <button class="Button-Sty-1">
+                           <img src="../IMG/Icon_Notes.png" alt="" class="Img_Icon">
+                           <span>Nota</span>
+                        </button>
+                        <button class="Button-Sty-1">
+                           <img src="../IMG/Icon_Document.png" alt="" class="Img_Icon">
+                           <span>Expediente</span> 
+                        </button>
+                        <button class="Button-Sty-1">
+                           <img src="../IMG/Icon_Folder.png" alt="" class="Img_Icon">
+                        </button>
+                        <button class="Button-Sty-1">
+                           <img src="../IMG/Icon_Archive.png" alt="" class="Img_Icon">
+                        </button>
+                        <button class="Button-Sty-0">i</button>
+                     </div>
+                  </div>
+                  <div class="Cn-Pacient-Grid3">
+                     <div class="Tag"><span>dd/mm/yyyy</span></div>
+                     <div class="Tag"><span>Masculino</span></div>
+                     <div class="Tag"><span>A+</span></div>
+                     <div class="Tag"><span>3395834501</span></div>
+                     <div class="Tag"><span>Correo@gmail.com</span></div>
+                     <div class="Tag Hiden"><span>Citado: hh:mm</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="Mn-Pacient-Sub">
+            <div class="Pacient-Registro">
+               <button>Historial de Eventos</button>
+               <button>Nota Rapida</button>
+               <span>Edad</span>
+               <span>Peso</span>
+               <span>Estatura</span>
+               <span>IMC</span>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
          </div>
          <div class="Mn-Dates Hiden">
             <div>
